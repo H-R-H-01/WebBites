@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+h2{
+    font-size: 2rem;
+    color: white;
+    z-index: 99;
+}
+
+div{
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    color: blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+div::before{
+    content:'';
+    position: absolute;
+    background: linear-gradient(yellow,red);
+    height: 120vh;
+    width: 30%;
+    animation: rotate 4s linear infinite;
+}
+
+div::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    inset: 5px;
+}
+
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+

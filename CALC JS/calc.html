@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="calc.css" rel="stylesheet">
+</head>
+<body>
+    <div class="Mainbody">
+        <h3>01's calc</h3>
+        <div class="inputbox">
+            <input type="text" id="display" class="InputArea">
+        </div>
+        <div class="row1">
+            <button class="clear1" onclick="clearDisplay()">C</button>
+        </div>
+        
+        <div class="row">
+            <button class="button1" onclick="DisplayValue(7)">7</button>
+            <button onclick="DisplayValue(8)">8</button>
+            <button onclick="DisplayValue(9)">9</button>
+            <button onclick="DisplayValue('/')">/</button>
+        </div>
+        <div class="row" onclick="DisplayValue">
+            <button onclick="DisplayValue(4)">4</button>
+            <button onclick="DisplayValue(5)">5</button>
+            <button onclick="DisplayValue(6)">6</button>
+            <button onclick="DisplayValue('*')">*</button>
+        </div>
+        <div class="row" onclick="DisplayValue">
+            <button onclick="DisplayValue(1)">1</button>
+            <button onclick="DisplayValue(2)">2</button>
+            <button onclick="DisplayValue(3)">3</button>
+            <button onclick="DisplayValue('-')">-</button>
+        </div>
+        <div class="row">
+            <button onclick="DisplayValue('.')">.</button>
+            <button onclick="DisplayValue(0)">0</button>
+            <button onclick="DisplayValue('+')">+</button>
+            <button onclick="calculate('=')">=</button>
+        </div>
+        
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
+
+            <!-- c
+7   8   9   /
+4   5   6   *
+1   2   3   -
+            +
+     0      =  -->

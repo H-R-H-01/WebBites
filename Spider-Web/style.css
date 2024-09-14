@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+:root{
+} */
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(116, 20, 116);
+}
+.content1{
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.banner .content1 h1{
+    font-size: 3em;
+}
+.banner .content1 h2{
+    letter-spacing: .27rem;
+    margin-top: 1em;
+}
+.content1 button{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: .1em;
+    font-size: 1em;
+    padding: .75em 1.5em .75em 1.5em;
+    margin-top: 2em;
+    border-radius: 2em;
+}
+.content1 button:hover{
+    background-color: transparent;
+    color:whitesmoke;
+    transition-duration: 1s;
+}
+
+/* The Spider Part */
+.banner #dotsCanvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    pointer-events: none;  
+}
